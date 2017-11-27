@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <title> my task board </title>
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel=stylesheet/less href="styles/style.less">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+  <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="content" class="container">
+
+
+
+        <header>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1><img src="images/title.png" alt="my task board"></h1>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="wrapper">
+            <div class="row">
+                <div class="col-md-12 form-group">
+                    <form novalidate>
+                        <textarea id="taskContent" placeholder="Enter taske" class="form-group" required></textarea>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-3 form-group">
+                    <form novalidate>
+                        <input placeholder="Enter Date" type="date" class="form-control" id="date" required>
+                    </form>
+                </div>
+                <div class="col-md-3">
+                    <form novalidate>
+                        <div class="form-group">
+                            <input placeholder="Enter Time" type="time" class="form-control" id="time">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-2">
+                    <form>
+                        <div class="form-group">
+                            <button id="saveTaskBtn" class="btn btn-default">Add Task</button>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </form>
+                </div>
+            
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div id="dateValue" class="col-md-2"></div>
+                <div class="col-md-8"></div>
+
+            </div>
+</section>
+            <div class="row">
+                <div id="taskToDo" class="col-md-12">
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="scripts/moment.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
